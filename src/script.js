@@ -12,3 +12,21 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+
+  $(".sec-exp").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".title-exp").offset().top
+    }, 700);
+  })
+
+  $(".sec-contact").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".title-contact").offset().top
+    }, 700);
+  })
+
+  $(".btn-dark").click(function() {
+    $("body").addClass("mode-dark")
+    console.log("dark")
+  })
