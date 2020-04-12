@@ -1,15 +1,23 @@
-.mode-dark {
-  background-color: rgb(48, 48, 49);
-  color: white;
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+#dark-mode-btn {
+  border: 1px solid red
 }
 
 .vertical-nav {
-    float: right;
-    margin-top: 5rem;
+  /* float: right; */
+  margin-top: 5rem;
 }
 
 .vertical-nav li {
-    padding-top: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.columns {
+  padding: 2rem
 }
 
 .col1-left,
@@ -18,16 +26,16 @@
 }
 
 .col1-left {
-  overflow-x: auto;
-  position: fixed;
+  /* overflow-x: auto;
+  position: fixed; */
   text-align: right;
-  width: 25%;
+  /* width: 25%; */
 }
 
-.col2-center {
+/* .col2-center {
   margin-left: 20rem;
   width: 40%;
-}
+} */
 
 .contact-container {
   margin-bottom: 8rem;
@@ -75,7 +83,7 @@ span.dates {
   padding-left: 7rem;
 }
 
- /* Style the buttons that are used to open and close the accordion panel */
+
   .accordion {
     background-color: white;
     border: none;
@@ -97,20 +105,47 @@ span.dates {
   /* Style the accordion panel. Note: hidden by default */
   .panel {
     background-color: white;
+    box-shadow: none !important;
     max-height: 0;
     overflow: hidden;
     padding: 0 18px;
     transition: max-height 0.1s ease-out;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
   }
 
-  .accordion:after {
-    /* color: #777; */
+  .panel p {
+    border-left: 2px solid #d5d5d5;
+    padding-left: 0.75rem;
+  }
+
+  .accordion::after {
     content: '\02795';
     font-size: 13px;
     float: right;
     margin-left: 5px;
   }
   
-  .active:after {
+  .active::after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
   }
+
+
+  @font-face {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.6.1') format('embedded-opentype'),url('../fonts/fontawesome-webfont.woff2?v=4.6.1') format('woff2'),url('../fonts/fontawesome-webfont.woff?v=4.6.1') format('woff'),url('../fonts/fontawesome-webfont.ttf?v=4.6.1') format('truetype'),url('../fonts/fontawesome-webfont.svg?v=4.6.1#fontawesomeregular') format('svg');
+    src: url('../fonts/fontawesome-webfont.eot?v=4.6.1');
+}
+
+
+
+
+
+
+
+
+
+
+

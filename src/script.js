@@ -34,13 +34,17 @@ for (i = 0; i < acc.length; i++) {
       return;
   })
 
-  // $(".sec-contact").click(function() {
-  //   $('html, body').animate({
-  //       scrollTop: $(".title-contact").offset().top
-  //   }, 400);
-  // })
 
-  $(".btn-dark").click(function() {
-    $("body").addClass("mode-dark")
-    console.log("dark")
-  })
+
+
+
+
+  document.getElementById('dark-mode-btn').addEventListener('click', function (e) {
+    const toggler = document.body;
+    toggler.classList.toggle('dark-mode');
+    const target = e.target;
+    target.classList.toggle('fa-moon');
+    target.classList.toggle('fa-sun');
+  });
+
+
