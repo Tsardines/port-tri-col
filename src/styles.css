@@ -3,9 +3,9 @@
   color: #fff;
 }
 
-#dark-mode-btn {
+/* #dark-mode-btn {
   border: 1px solid red
-}
+} */
 
 .vertical-nav {
   /* float: right; */
@@ -80,14 +80,27 @@ tr.no-border td {
 
 
 span.dates {
-  padding-left: 7rem;
+  padding-left: 10rem;
 }
 
+span.dates-med {
+  padding-left: 8rem;
+}
+
+span.dates-long {
+  padding-left: 3rem;
+}
+
+b.job-title {
+  font-style: italic;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+}
 
   .accordion {
-    background-color: white;
+    background-color: rgba(255,255,255,0);
     border: none;
-    color: #2F3C3B;
+    color: #379C99;
     cursor: pointer;
     font-size: 1rem;
     outline: none;
@@ -104,7 +117,7 @@ span.dates {
   
   /* Style the accordion panel. Note: hidden by default */
   .panel {
-    background-color: white;
+    background-color: rgba(255,255,255,0);
     box-shadow: none !important;
     max-height: 0;
     overflow: hidden;
@@ -114,10 +127,18 @@ span.dates {
     -moz-box-shadow: none !important;
   }
 
+  .table {
+    background-color: rgba(255,255,255,0) !important;
+  }
+
   .panel p {
     border-left: 2px solid #d5d5d5;
     padding-left: 0.75rem;
   }
+
+  /* .panel b {
+    color: rgb(74, 74, 74);
+  } */
 
   .accordion::after {
     content: '\02795';
