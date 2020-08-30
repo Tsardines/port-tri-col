@@ -1,0 +1,4 @@
+[build]
+  base = "port-tri-col/"
+  publish = "public"
+  command = "CI= npm run build"
