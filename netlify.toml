@@ -1,4 +1,4 @@
 [build]
-  base = "/port-tri-col"
-  publish = "public"
+  base = "port-tri-col/"
+  publish = "port-tri-col/src"
   command = "CI= npm run build"
